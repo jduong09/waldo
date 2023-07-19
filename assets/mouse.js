@@ -339,3 +339,38 @@ Giant Fly [666, 1622]
 Wolf [827, 1585]
 Greater Crab (Ice) [335, 2064]
 */
+
+/* The Ringed City DLC */
+/*
+Dreg Heap
+____________
+Demon Prince []
+Demon in Pain [3475, 1219]
+Demon From Below [3139, 1170]
+Stone Humped Hag [3437, 989]
+Amnesiac Lapp [3323, 983]
+Murkman [3305, 885] [3228, 853]
+Angel [3594, 637]
+Harald Legion Knight [3328, 774]
+Overgrown Lothric Knight [3427, 871]
+Desert Pyromancer Zoey [3525, 1001]
+*/
+
+/*
+The Ringed City
+_________________
+Darkeater Midir [3554, 2250]
+Halflight, Spear of the Church [3612, 1538]
+Slave Knight Gael [3735, 3265]
+Shira [3763, 2323]
+Locust Preacher(s) [3828, 1694] [3744, 1756]
+Judicator Argo [3798, 1392]
+Filianore [3601, 1402]
+Ringed Knight [3732, 1623] [3559, 1656] [3328, 1563]
+Moaning Knight [3489, 1466]
+Silver Knight Ledo [3342, 1579]
+Hollow Cleric [3638, 1725]
+Lothric Thief [3591, 1783] [3685, 1789]
+Show Your Humanity [3884, 1631]
+Pygmy King [3861, 3278]
+*/
