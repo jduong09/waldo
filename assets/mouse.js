@@ -301,164 +301,364 @@ const darkSoulsData = {
       gameLocation: 'Undead Settlement',
       type: 'enemy'
     },
+    'Hollow Slave': {
+      locationOffSet: [[2688, 2036]],
+      gameLocation: 'Undead Settlement',
+      type: 'enemy'
+    },
+    'Cage Spider': {
+      locationOffSet: [[2609, 1993]],
+      gameLocation: 'Undead Settlement',
+      type: 'enemy'
+    },
+    'Cathedral Evangelist': {
+      locationOffSet: [[2782, 2068]],
+      gameLocation: 'Undead Settlement',
+      type: 'enemy'
+    },
+    'Hollow Manservant': {
+      locationOffSet: [[3022, 2046], [2936, 2003]],
+      gameLocation: 'Undead Settlement',
+      type: 'enemy'
+    },
+    'Hound-rat': {
+      locationOffSet: [[2804, 1937]],
+      gameLocation: 'Undead Settlement',
+      type: 'enemy'
+    },
+    'Large Hound-rat': {
+      locationOffSet: [[2708, 1927]],
+      gameLocation: 'Undead Settlement',
+      type: 'enemy'
+    },
+    'Holy Knight Hodrick (Invasion)': {
+      locationOffSet: [[2897, 1846]],
+      gameLocation: 'Undead Settlement',
+      type: 'enemy'
+    },
+    'Skeleton': {
+      locationOffSet: [[2522, 2029]],
+      gameLocation: 'Undead Settlement',
+      type: 'enemy'
+    },
+    'Fire Demon': {
+      locationOffSet: [[2650, 1806]],
+      gameLocation: 'Undead Settlement',
+      type: 'enemy'
+    },
+    'Boreal Outrider Knight': {
+      locationOffSet: [[3098, 2139]],
+      gameLocation: 'Undead Settlement',
+      type: 'enemy'
+    },
+    'Lycanthrope Hunter': {
+      locationOffSet: [[2684, 2598], [2600, 2613]],
+      gameLocation: 'Road of Sacrifices',
+      type: 'enemy'
+    },
+    'Lycanthrope': {
+      locationOffSet: [[2570, 2488]],
+      gameLocation: 'Road of Sacrifices',
+      type: 'enemy'
+    },
+    'Poisonhorn Bug': {
+      locationOffSet: [[2736, 2645]],
+      gameLocation: 'Road of Sacrifices',
+      type: 'enemy'
+    },
+    'Lesser Crab': {
+      locationOffSet: [[2701, 2484]],
+      gameLocation: 'Road of Sacrifices',
+      type: 'enemy'
+    },
+    'Great Crab': {
+      locationOffSet: [[2768, 2431]],
+      gameLocation: 'Road of Sacrifices',
+      type: 'enemy'
+    },
+    'Madwoman': {
+      locationOffSet: [[2968, 2268]],
+      gameLocation: 'Road of Sacrifices',
+      type: 'enemy'
+    },
+    'Yellowfinger Heysel (Invader)': {
+      locationOffSet: [[2814, 2631]],
+      gameLocation: 'Road of Sacrifices',
+      type: 'enemy'
+    },
+    'Rosaria, Mother of Rebirth': {
+      locationOffSet: [[3383, 2853]],
+      gameLocation: 'Cathedral of the Deep',
+      type: 'npc'
+    },
+    'Deacons of the Deep': {
+      locationOffSet: [[3100, 2722]],
+      gameLocation: 'Cathedral of the Deep',
+      type: 'boss'
+    },
+    'Cathedral Knight': {
+      locationOffSet: [[2812, 3056]],
+      gameLocation: 'Cathedral of the Deep',
+      type: 'enemy'
+    },
+    'Reanimated Corpse': {
+      locationOffSet: [[2865, 3160]],
+      gameLocation: 'Cathedral of the Deep',
+      type: 'enemy'
+    },
+    'Infested Corpse': {
+      locationOffSet: [[3160, 3111]],
+      gameLocation: 'Cathedral of the Deep',
+      type: 'enemy'
+    },
+    'Cathedral Grave Warden': {
+      locationOffSet: [[2934, 3068]],
+      gameLocation: 'Cathedral of the Deep',
+      type: 'enemy'
+    },
+    'Devout of the Deep': {
+      locationOffSet: [[3053, 2874], [3173, 2845], [2957, 2771], [3262, 2785]],
+      gameLocation: 'Cathedral of the Deep',
+      type: 'enemy'
+    },
+    'Corpse-grub': {
+      locationOffSet: [[3023, 3120]],
+      gameLocation: 'Cathedral of the Deep',
+      type: 'enemy'
+    },
+    'Writhing Rotten Flesh': {
+      locationOffSet: [[3083, 3018]],
+      gameLocation: 'Cathedral of the Deep',
+      type: 'enemy'
+    },
 
 
-    'Giant Slave': {
-      locationOffSet: [[2834, 1697]],
-      gameLocation: 'Undead Settlement',
+    'Man-grub': {
+      locationOffSet: [[3288, 2914]],
+      gameLocation: 'Cathedral of the Deep',
       type: 'enemy'
     },
-    'Giant Slave': {
-      locationOffSet: [[2834, 1697]],
-      gameLocation: 'Undead Settlement',
+    'Deep Accursed': {
+      locationOffSet: [[2921, 2940]],
+      gameLocation: 'Cathedral of the Deep',
       type: 'enemy'
     },
-    'Giant Slave': {
-      locationOffSet: [[2834, 1697]],
-      gameLocation: 'Undead Settlement',
+    'Longfinger Kirk (NPC invader)': {
+      locationOffSet: [[3292, 3012]],
+      gameLocation: 'Cathedral of the Deep',
       type: 'enemy'
     },
-    'Giant Slave': {
-      locationOffSet: [[2834, 1697]],
-      gameLocation: 'Undead Settlement',
+    'Abyss Watchers': {
+      locationOffSet: [[2037, 2615]],
+      gameLocation: 'Farron Keep',
+      type: 'boss'
+    },
+    'Stray Demon': {
+      locationOffSet: [[2172, 2649]],
+      gameLocation: 'Farron Keep',
+      type: 'boss'
+    },
+    'Darkwraith': {
+      locationOffSet: [[1649, 2753]],
+      gameLocation: 'Farron Keep',
       type: 'enemy'
     },
-
+    'Basilisk': {
+      locationOffSet: [[2079, 2753]],
+      gameLocation: 'Farron Keep',
+      type: 'enemy'
+    },
+    'Elder Ghru': {
+      locationOffSet: [[1938, 2739]],
+      gameLocation: 'Farron Keep',
+      type: 'enemy'
+    },
+    'Ghru': {
+      locationOffSet: [[2202, 2817], [2119, 2828], [1849, 2758], [1752, 2760], [1715, 2844]],
+      gameLocation: 'Farron Keep',
+      type: 'enemy'
+    },
+    'Rotten Slug': {
+      locationOffSet: [[1801, 2877]],
+      gameLocation: 'Farron Keep',
+      type: 'enemy'
+    },
+    'London Pale Shade': {
+      locationOffSet: [[1736, 2641]],
+      gameLocation: 'Farron Keep',
+      type: 'enemy'
+    },
+    'Black Hand Gotthard': {
+      locationOffSet: [[1846, 2623]],
+      gameLocation: 'Farron Keep',
+      type: 'enemy'
+    },
+    'High Lord Wolnir': {
+      locationOffSet: [[1358, 2974]],
+      gameLocation: 'Catacombs of Carthus',
+      type: 'boss'
+    },
+    'Carthus Skeleton': {
+      locationOffSet: [[1449, 3194]],
+      gameLocation: 'Catacombs of Carthus',
+      type: 'enemy'
+    },
+    'Skeleton Wheel': {
+      locationOffSet: [[1620, 3176]],
+      gameLocation: 'Catacombs of Carthus',
+      type: 'enemy'
+    },
+    'Dark Spirit Knight Slayer Tsorig (Invasion)': {
+      locationOffSet: [[1644, 3083]],
+      gameLocation: 'Catacombs of Carthus',
+      type: 'enemy'
+    },
+    'Carthus Swordsman Skeleton': {
+      locationOffSet: [[1335, 3181]],
+      gameLocation: 'Catacombs of Carthus',
+      type: 'enemy'
+    },
+    'Grave Warden Skeleton': {
+      locationOffSet: [[1142, 3124], [1232, 3165], [1180, 3042], [1301, 3107]],
+      gameLocation: 'Catacombs of Carthus',
+      type: 'enemy'
+    },
+    'Great Swamp Cuculus': {
+      locationOffSet: [[2557, 3227]],
+      gameLocation: 'Smouldering Lake',
+      type: 'npc'
+    },
+    'Old Demon King': {
+      locationOffSet: [[1965, 3051]],
+      gameLocation: 'Smouldering Lake',
+      type: 'boss'
+    },
+    'Carthus Sandworm': {
+      locationOffSet: [[2133, 3099]],
+      gameLocation: 'Smouldering Lake',
+      type: 'boss'
+    },
+    'Demon Cleric': {
+      locationOffSet: [[1916, 3250]],
+      gameLocation: 'Smouldering Lake',
+      type: 'enemy'
+    },
+    'Demon Statue': {
+      locationOffSet: [[2004, 3208]],
+      gameLocation: 'Smouldering Lake',
+      type: 'enemy'
+    },
+    'Great Crab (Ember)': {
+      locationOffSet: [[2444, 3140]],
+      gameLocation: 'Smouldering Lake',
+      type: 'enemy'
+    },
+    'Smoldering Ghru': {
+      locationOffSet: [[2477, 3283], [2375, 3379], [2266, 3363], [2171, 3368], [2040, 3340]],
+      gameLocation: 'Smouldering Lake',
+      type: 'enemy'
+    },
+    'Smoldering Rotten Flesh': {
+      locationOffSet: [[1927, 3362]],
+      gameLocation: 'Smouldering Lake',
+      type: 'enemy'
+    },
+    'Pontiff Sulyvahn': {
+      locationOffSet: [[1132, 2425]],
+      gameLocation: 'Irithyll Of The Boreal Valley',
+      type: 'boss'
+    },
+    'Burning Stake Witch': {
+      locationOffSet: [[910, 2512]],
+      gameLocation: 'Irithyll Of The Boreal Valley',
+      type: 'enemy'
+    },
+    'Irithyllian Slave': {
+      locationOffSet: [[976, 2591], [1063, 2638], [1002, 2719], [906, 2702]],
+      gameLocation: 'Irithyll Of The Boreal Valley',
+      type: 'enemy'
+    },
+    'Pontiff Knight (Hag)': {
+      locationOffSet: [[835, 2654] [1107, 2737] [1210, 2731]],
+      gameLocation: 'Irithyll Of The Boreal Valley',
+      type: 'enemy'
+    },
+    'Sewer Centipede': {
+      locationOffSet: [[804, 2581]],
+      gameLocation: 'Irithyll Of The Boreal Valley',
+      type: 'enemy'
+    },
+    'Sulyvahn\'s Beast': {
+      locationOffSet: [[1456, 2588]],
+      gameLocation: 'Irithyll Of The Boreal Valley',
+      type: 'enemy'
+    },
+    'Irithyllian Beast-hound': {
+      locationOffSet: [[1300, 2508]],
+      gameLocation: 'Irithyll Of The Boreal Valley',
+      type: 'enemy'
+    },
+    'Creighton the Wanderer': {
+      locationOffSet: [[1391, 2497]],
+      gameLocation: 'Irithyll Of The Boreal Valley',
+      type: 'npc'
+    },
+    'Company Captain Yorshka': {
+      locationOffSet: [[1439, 2114]],
+      gameLocation: 'Anor Londo',
+      type: 'npc'
+    },
+    'Drang Knights': {
+      locationOffSet: [[1211, 2261], [1123, 2256]],
+      gameLocation: 'Anor Londo',
+      type: 'enemy'
+    },
+    'Aldrich, Devourer of Gods': {
+      locationOffSet: [[1253, 2028]],
+      gameLocation: 'Anor Londo',
+      type: 'boss'
+    },
+    'Silver Knight': {
+      locationOffSet: [[1316, 2252], [1404, 2242], [1085, 2158]],
+      gameLocation: 'Anor Londo',
+      type: 'enemy'
+    },
+    'Jailer': {
+      locationOffSet: [[846, 2948], [751, 2938], [995, 2856], [771, 2828], [610, 2862]],
+      gameLocation: 'Irithyll Dungeon',
+      type: 'enemy'
+    },
+    'Alva, Seeker of the Spurned (Invasion)': {
+      locationOffSet: [[936, 2962]],
+      gameLocation: 'Irithyll Dungeon',
+      type: 'enemy'
+    },
+    'Monstrosity of Sin': {
+      locationOffSet: [[363, 3120]],
+      gameLocation: 'Irithyll Dungeon',
+      type: 'enemy'
+    },
+    'Wretch': {
+      locationOffSet: [[664, 2928], [903, 2875], [1032, 2942]],
+      gameLocation: 'Irithyll Dungeon',
+      type: 'enemy'
+    },
   }
 };
-
 /*
 Default Classes (Optional)
 */
-
 /*
 FireLink Shrine
 Highwall of Lothric
-*/
-
-/*
 Undead Settlement
-__________________
-Hollow Slave [2688, 2036]
-Cage Spider [2609, 1993]
-Cathedral Evangelist [2782, 2068]
-Hollow Manservant [3022, 2046] [2936, 2003]
-Hound-rat [2804, 1937]
-Large Hound-rat [2708, 1927]
-Skeleton [2522, 2029]
-Fire Demon [2650, 1806]
-Boreal Outrider Knight [3098, 2139]
-2x Crystal Lizard
-Holy Knight Hodrick (Invasion) [2897, 1846]
-*/
-
-/*
-Road of Sacrifices
-___________________
-Black Knight
-Corvian
-Corvian Storyteller
-Lycanthrope Hunter [2684, 2598] [2600, 2613]
-Lycanthrope [2570, 2488]
-Poisonhorn Bug [2736, 2645]
-Lesser Crab [2701, 2484]
-Great Crab [2768, 2431]
-Madwoman [2968, 2268]
-Evangelist (after defeating Crystal Sage)
-Holy Knight Hodrick (Mad Phantom)
-Yellowfinger Heysel (Invader) [2814, 2631]
-*/
-
-/*
 Cathedral of the Deep 
-______________________
-Rosaria, Mother of Rebirth [3383, 2853]
-Deacons of the Deep [3100, 2722]
-Cathedral Knight [2812, 3056]
-Reanimated Corpse [2865, 3160]
-Infested Corpse [3160, 3111]
-Cathedral Grave Warden [2934, 3068]
-Devout of the Deep [3053, 2874] [3173,]
-Corpse-grub [3023, 3120]
-Writhing Rotten Flesh [3083, 3018]
-Man-grub [3288, 2914]
-Giant Slave
-Ravenous Crystal Lizard
-Deep Accursed [2921, 2940]
-Longfinger Kirk (NPC invader) [3292, 3012]s
-*/
-
-/*
 Farron Keep
-_____________
-Abyss Watchers [2037, 2615]
-Stray Demon [2172, 2649]
-Darkwraith [1649, 2753]
-Basilisk [2079, 2753]
-Corvian
-Corvian Storyteller
-Crystal Lizard
-Elder Ghru [1938, 2739]
-Ghru [2202, 2817] [2119, 2828] [1849, 2758] [1752, 2760] [1715, 2844]
-Ravenous Crystal Lizard
-Rotten Slug [1801, 2877]
-London Pale Shade [1736, 2641]
-Black Hand Gotthard [1846, 2623]
-*/
-
-/*
 Catacombs of Carthus
-_____________________
-High Lord Wolnir [1358, 2974]
-Skeleton [1449, 3194]
-Skeleton Wheel [1620, 3176]
-Dark Spirit Knight Slayer Tsorig (Invasion) [1644, 3083]
-Carthus Swordsman Skeleton [1335, 3181]
-Grave Warden Skeleton [1142, 3124] [1232, 3165] [1180, 3042] [1301, 3107]
-*/
-
-/*
 Smouldering Lake
-__________________
-Great Swamp Cuculus [2557, 3227]
-Old Demon King [1965, 3051]
-Carthus Sandworm [2133, 3099]
-Demon Cleric [1916, 3250]
-Demon Statue [2004, 3208]
-Great Crab (Ember) [2444, 3140]
-Smoldering Ghru [2477, 3283] [2375, 3379] [2266, 3363] [2171, 3368] [2040, 3340]
-Smoldering Rotten Flesh [1927, 3362]
-*/
-
-/*
-Irithyll Of The Boreal Valley
-_______________________________
-Pontiff Sulyvahn [1132, 2425]
-Burning Stake Witch [910, 2512]
-Irithyllian Slave [976, 2591] [1063, 2638] [1002, 2719] [906, 2702]
-Pontiff Knight (Hag) [835, 2654] [1107, 2737] [1210, 2731]
-Sewer Centipede [804, 2581]
-Sulyvahn's Beast [1456, 2588]
-Irithyllian Beast-hound [1300, 2508]
-Creighton the Wanderer [1391, 2497]
-*/
-
-/* 
-Anor Londo 
-___________
-Company Captain Yorshka [1439, 2114]
-Drang Knights [1211, 2261] [1123, 2256]
-Aldrich, Devourer of Gods [1253, 2028]
-Silver Knight [1316, 2252] [1404, 2242] [1085, 2158]
-*/
-
-/*
+Irithyll Of The Boreal Valley 
+Anor Londo
 Irithyll Dungeon
-___________________
-Jailer [846, 2948] [751, 2938] [995, 2856] [771, 2828] [610, 2862]
-Alva, Seeker of the Spurned (Invasion) [936, 2962]
-Monstrosity of Sin [363, 3120]
-Wretch [664, 2928] [903, 2875] [1032, 2942]
 */
 
 /*
@@ -588,4 +788,17 @@ Hollow Cleric [3638, 1725]
 Lothric Thief [3591, 1783] [3685, 1789]
 Show Your Humanity [3884, 1631]
 Pygmy King [3861, 3278]
+*/
+
+
+
+
+/*
+Road of Sacrifices
+___________________
+Black Knight
+Corvian
+Corvian Storyteller
+Evangelist (after defeating Crystal Sage)
+Holy Knight Hodrick (Mad Phantom)
 */
