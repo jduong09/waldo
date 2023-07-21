@@ -1,4 +1,4 @@
-const darkSoulsData = require('../assets/data.js');
+import { darkSoulsData } from "./data";
 
 document.addEventListener('DOMContentLoaded', () => {
   const div = document.querySelector('div.div-gallery');
