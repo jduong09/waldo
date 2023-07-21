@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const img = document.getElementById('img-dark-souls');
   const btnPlay = document.getElementById('btn-play');
   const btnPlayAgain = document.getElementById('btn-play-again');
+  const svgQuestion = document.querySelector('#div-how-to > svg');
   let start;
   let counter = 0;
   let gameCharacters = [];
@@ -116,7 +117,18 @@ document.addEventListener('DOMContentLoaded', () => {
     listCharacters.classList.add('hide');
     btnPlay.classList.remove('hide');
     divGameOver.classList.add('hide');
-  })
+  });
+
+  svgQuestion.addEventListener('click', () => {
+    const divHowTo = document.getElementById('div-how-to');
+
+    if (divHowTo.classList.contains('unopen')) {
+      divHowTo.classList.remove('unopen');
+    } else {
+      divHowTo.classList.add('unopen');
+    }
+  });
+
 });
 
 const randomIntFromInterval = (min, max) => { // min and max included 
