@@ -270,6 +270,16 @@ export const darkSoulsData = {
       gameLocation: 'Undead Settlement',
       type: 'enemy'
     },
+    'Corvian': {
+      locationOffSet: [[2969, 2638], [3223, 2377]],
+      gameLocation: 'Road of Sacrifices',
+      type: 'enemy'
+    },
+    'Corvian Storyteller': {
+      locationOffSet: [[3062, 2307]],
+      gameLocation: 'Road of Sacrifices',
+      type: 'enemy'
+    },
     'Lycanthrope Hunter': {
       locationOffSet: [[2684, 2598], [2600, 2613]],
       gameLocation: 'Road of Sacrifices',
@@ -307,6 +317,11 @@ export const darkSoulsData = {
     },
     'Rosaria, Mother of Rebirth': {
       locationOffSet: [[3383, 2853]],
+      gameLocation: 'Cathedral of the Deep',
+      type: 'npc'
+    },
+    'Slave Knight Gael (NPC)': {
+      locationOffSet: [[3108, 3244]],
       gameLocation: 'Cathedral of the Deep',
       type: 'npc'
     },
@@ -496,7 +511,7 @@ export const darkSoulsData = {
       type: 'enemy'
     },
     'Pontiff Knight (Hag)': {
-      locationOffSet: [[835, 2654] [1107, 2737] [1210, 2731]],
+      locationOffSet: [[835, 2654], [1107,2737], [1210, 2731]],
       gameLocation: 'Irithyll Of The Boreal Valley',
       type: 'enemy'
     },
@@ -934,41 +949,3 @@ export const darkSoulsData = {
     },
   }
 };
-/*
-Default Classes (Optional)
-*/
-/*
-FireLink Shrine
-Highwall of Lothric
-Undead Settlement
-Cathedral of the Deep 
-Farron Keep
-Catacombs of Carthus
-Smouldering Lake
-Irithyll Of The Boreal Valley 
-Anor Londo
-Irithyll Dungeon
-Profaned Capital
-Consumed King's Garden
-Unintended Grave
-Archdragon Peak
-Lothric Castle
-Grand of Archives
-Kiln of the First Flame
-Painted World of Ariandel
-Dreg Heap
-The Ringed City
-*/
-/*
-Road of Sacrifices
-___________________
-Black Knight
-Corvian
-Corvian Storyteller
-Evangelist (after defeating Crystal Sage)
-Holy Knight Hodrick (Mad Phantom)
-
-Dreg Heap
-___________________
-Demon Prince []
-*/
