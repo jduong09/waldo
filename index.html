@@ -13,12 +13,18 @@
     <h1>Where's Waldo? Dark Souls 3 Edition</h1>
     <button id="btn-play">Play Game!</button>
     <!-- <h2 id="header-turn-result">Result</h2> -->
-    <ul id="list-game-characters">
+    <ul id="list-game-characters" class="hide">
     </ul>
   </header>
   <main>
     <div class="div-gallery">
       <img id="img-dark-souls" src="./assets/dark_souls_3.jpeg" alt="image of dark souls wimmelbuch" />
+    </div>
+    <div id="div-game-over" class="hide">
+      <h2>Success!</h2>
+      <ul id="list-turns"></ul>
+      <div id="game-over-message"></div>
+      <button id="btn-play-again">Play Again</button>
     </div>
   </main>
 </body>

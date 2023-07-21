@@ -288,6 +288,16 @@ const darkSoulsData = {
       gameLocation: 'Undead Settlement',
       type: 'enemy'
     },
+    'Corvian': {
+      locationOffSet: [[2969, 2638], [3223, 2377]],
+      gameLocation: 'Road of Sacrifices',
+      type: 'enemy'
+    },
+    'Corvian Storyteller': {
+      locationOffSet: [[3062, 2307]],
+      gameLocation: 'Road of Sacrifices',
+      type: 'enemy'
+    },
     'Lycanthrope Hunter': {
       locationOffSet: [[2684, 2598], [2600, 2613]],
       gameLocation: 'Road of Sacrifices',
@@ -957,34 +967,22 @@ const darkSoulsData = {
     },
   }
 };
-/*
-
-On App Start
-  - Choose 3 Characters to choose from Image
-    - randomized choosing
-  - Display to user 3 characters
-
-Event Listeners
-  - IMG hover
-    - Show tagging aim
-  - IMG click
-    - Take offSet data and check if user has chosen the correct character
-  - Play Game Click
-    - Remove intro modal?
-*/
 
 document.addEventListener('DOMContentLoaded', () => {
   // const headerTurnResult = document.getElementById('header-turn-result');
   const div = document.querySelector('div.div-gallery');
   const img = document.getElementById('img-dark-souls');
   const btnPlay = document.getElementById('btn-play');
+  const btnPlayAgain = document.getElementById('btn-play-again');
   let start;
-  let intervalId;
   let counter = 0;
   let gameCharacters = [];
+  let gameResult = {}
 
   img.addEventListener('click', (e) => {
+    console.log(e);
     counter += 1;
+    let foundCharacter = false;
 
     const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
@@ -1001,7 +999,7 @@ document.addEventListener('DOMContentLoaded', () => {
     svg.appendChild(rect);
     div.appendChild(svg);
 
-    gameCharacters.forEach(charArr => {
+    gameCharacters.forEach((charArr, idx) => {
       // Array of one or multiple locationOffSets.
       const charName = charArr[0];
       const charOffSet = charArr[1].locationOffSet;
@@ -1010,47 +1008,58 @@ document.addEventListener('DOMContentLoaded', () => {
         && e.offsetX + 25 > locationOffSet[0]
         && e.offsetY - 37.5 < locationOffSet[1]
         && e.offsetY + 37.5 > locationOffSet[1]) {
-          console.log(`Found ${charName} in ${counter} tries.`);
-          // headerTurnResult.innerHTML = `Found ${charName} in ${counter} tries.`;
-        } else {
-          setTimeout(() => {
-            document.getElementById(`svg-choice-${counter}`).remove();
-          }, 1000);
+          const listItemChar = document.querySelector(`#list-item-${idx+1}`);
+          listItemChar.classList.add('found');
+          gameResult[charName] = {
+            turns: counter
+          }
+          foundCharacter = true;
+          counter = 0;
         }
       });
     });
 
-    /*
-    if (e.offsetX - 25 < darkSoulsData['darkSouls3']['Iudex of Gundyr'].locationOffSet[0][0]
-      && e.offsetX + 25 > darkSoulsData['darkSouls3']['Iudex of Gundyr'].locationOffSet[0][0]
-      && e.offsetY - 37.5 < darkSoulsData['darkSouls3']['Iudex of Gundyr'].locationOffSet[0][1]
-      && e.offsetY + 37.5 > darkSoulsData['darkSouls3']['Iudex of Gundyr'].locationOffSet[0][1]) {
-      const delta = Date.now() - start;
-      console.log(`It took ${Math.floor(delta / 1000)} seconds!`);
-      headerTurnResult.innerHTML = `Found Iudex Of Gundyr in ${counter} tries.`;
-      clearInterval(intervalId);
-    } else {
-      headerTurnResult.innerHTML = `Try Again Bitch.`;
+    if (!foundCharacter) {
       setTimeout(() => {
         svg.remove();
       }, 1000);
     }
-    */
+
+    if (counter > 3) {
+      gameCharacters.forEach((charArr, idx) => {
+        const listItemChar = document.querySelector(`#list-item-${idx+1}`);
+
+        if (!listItemChar.classList.contains('found')) {
+          listItemChar.innerText = `${charArr[0]} (${charArr[1].gameLocation})`;
+        }
+      })
+    }
+    // User found all 3 characters
+    if (Object.entries(gameResult).length === 3) {
+      const divGameOver = document.getElementById('div-game-over')
+      const listTurns = document.getElementById('list-turns');
+      const gameOverMessage = document.getElementById('game-over-message');
+      
+      listTurns.innerText = '';
+      
+      Object.entries(gameResult).forEach((char) => {
+        const newListItem = document.createElement('li');
+        newListItem.innerText = `Found ${char[0]} in ${char[1].turns} turns!`;
+        listTurns.appendChild(newListItem);
+      });
+
+      gameOverMessage.innerText = `Finished game in ${Math.round((Date.now() - start) / 1000)} seconds!`;
+      divGameOver.classList.remove('hide');
+    }
   });
 
-  btnPlay.addEventListener('click', () => {
+  btnPlay.addEventListener('click', (e) => {
+    e.preventDefault();
     const listCharacters = document.getElementById('list-game-characters');
+    
     listCharacters.innerText = '';
     start = Date.now();
     
-    /*
-    intervalId = setInterval(() => {
-      const delta = Date.now() - start;
-      
-      // console.log(Math.floor(delta / 1000));
-    }, 1000);
-    */
-
     const entriesData = Object.entries(darkSoulsData.darkSouls3);
     for (let i = 0; i < 3; i++) {
       const randomInt = randomIntFromInterval(0, entriesData.length);
@@ -1058,13 +1067,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const newListItem = document.createElement('li');
       newListItem.innerText = entriesData[randomInt][0];
+      newListItem.id = `list-item-${i+1}`;
       listCharacters.appendChild(newListItem);
     }
 
     btnPlay.classList.add('hide');
+    listCharacters.classList.remove('hide');
   });
-});
 
+  btnPlayAgain.addEventListener('click', (e) => {
+    e.preventDefault();
+    const divGameOver = document.getElementById('div-game-over');
+    const listCharacters = document.getElementById('list-game-characters');
+
+    counter = 0;
+    gameCharacters = [];
+    gameResult = {}
+    listCharacters.classList.add('hide');
+    btnPlay.classList.remove('hide');
+    divGameOver.classList.add('hide');
+  })
+});
 
 const randomIntFromInterval = (min, max) => { // min and max included 
   return Math.floor(Math.random() * (max - min + 1) + min)

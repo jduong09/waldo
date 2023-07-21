@@ -7,6 +7,15 @@ body {
   display: none !important;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+#btn-play:hover, #btn-play-again:hover {
+  color: white;
+  background-color: transparent;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -26,12 +35,24 @@ h1 {
   font-weight: 700;
 }
 
+#btn-play {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: .5rem 1rem;
+}
+
 #list-game-characters {
   text-align: end;
 }
 
 #list-game-characters > li {
   margin-bottom: .5rem;
+}
+
+#list-game-characters > li.found {
+  text-decoration: line-through;
 }
 
 .div-gallery {
@@ -44,4 +65,36 @@ h1 {
 
 #img-dark-souls:hover {
   cursor: url('../cursor.svg') 50 64, auto;
+}
+
+#div-game-over {
+  padding: 1rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  background-color: darkslateblue;
+  border: 1px solid white;
+  color: white;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#div-game-over > h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+#list-turns, #game-over-message {
+  margin-bottom: 1rem;
+}
+
+#btn-play-again {
+  display: block;
+  padding: .5rem 2rem;
+  margin: 0 auto;
+  border: 1px solid white;
+  background-color: white;
+  color: black;
 }
