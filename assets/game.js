@@ -962,7 +962,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let gameResult = {}
 
   img.addEventListener('click', (e) => {
-    console.log(e);
     counter += 1;
     let foundCharacter = false;
 
