@@ -1,7 +1,47 @@
+body {
+  position: relative;
+  font-family: sans-serif;
+}
+
+.hide {
+  display: none !important;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  background-color: darkslateblue;
+  color: white;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#list-game-characters {
+  text-align: end;
+}
+
+#list-game-characters > li {
+  margin-bottom: .5rem;
+}
+
 .div-gallery {
   position: relative;
 }
 
 #img-dark-souls {
   display: block;
+}
+
+#img-dark-souls:hover {
+  cursor: url('../cursor.svg') 50 64, auto;
 }
