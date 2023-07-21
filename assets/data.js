@@ -1,4 +1,4 @@
-export const darkSoulsData = {
+const darkSoulsData = {
   darkSouls3: {
     'Iudex of Gundyr': {
       locationOffSet: [[2203, 2102]],
@@ -949,3 +949,5 @@ export const darkSoulsData = {
     },
   }
 };
+
+module.exports = darkSoulsData
